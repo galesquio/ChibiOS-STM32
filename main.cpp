@@ -56,9 +56,10 @@ int main(void)
     while (1)
     {
         if (palReadPad(GPIOA, GPIOA_BUTTON))
-        {
-            println("Button pressed!");
-        }
+            palSetPad(GPIOC, GPIOC_LED3);
+        else
+            palClearPad(GPIOC, GPIOC_LED3);
+
         chThdSleepMilliseconds(50);
     }
 }

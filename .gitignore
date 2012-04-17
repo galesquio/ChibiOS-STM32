@@ -1,0 +1,8 @@
+# kscope files
+*.cpp~
+*.c~
+Makefile~
+
+# Temporary build catalogs
+.dep/
+build/
